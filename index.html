@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Exo+2:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <video autoplay muted loop playsinline>
+            <source src="./assets/spacevideo-E.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+
+        <nav>
+            <div class="logo">Space Connect</div>
+            <ul>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>From Earth to the Stars</h1>
+            <p>From Earth to the Stars – Book Your Space Journey Today.</p>
+            <a href="#packages"><button>Explore Packages</button></a>
+        </div>
+
+        <div class="partners">
+            <span>ISRO</span>
+            <span>SpaceX</span>
+            <span>Blue Origin</span>
+        </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="packages" id="packages">
+        <h1 class="package-title">PACKAGE</h1>
+        <div class="temp">
+            <div class="card">
+                <img class="card-image" src="./assets/I1.jpg" alt="">
+                <div class="card-text">
+                    <h4 class="til">Moon Gataway</h4>
+                    <h4 class="pt">3 DAYS</h4>
+                    <ul>
+                        <li>Spacewalk Experience</li>
+                        <li>Stay at Lunar Dome</li>
+                    </ul>
+                    <button class="button">Book Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="./assets/I2.jpg" alt="">
+                <div class="card-text">
+                    <h3 class="til">Mars Expedition</h3>
+                    <h4 class="pt">2 WEEKS</h4>
+                    <ul>
+                        <li>Guided Rover Tours</li>
+                        <li>Martian Colony Visit</li>
+                    </ul>
+                    <button class="button">Book Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="./assets/I3.jpg" alt="">
+                <div class="card-text">
+                    <h2 class="til">Space Station Luxury </h2>
+                    <h3 class="pt">7 DAYS</h3>
+                    <ul>
+                        <li>Zero-Gravity Spa</li>
+                        <li>Panoramic Views</li>
+                    </ul>
+                    <button class="button">Book Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="./assets/I4.jpg" alt="">
+                <div class="card-text">
+                    <h3 class="til">Exoplanet Adventure (Future)</h3>
+                    <h3 class="pt">2028+</h3>
+                    <ul>
+                        <li>Conceptual packages</li>
+                        <li>Ready to Explore</li>
+                    </ul>
+                    <button class="button">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="about" id="about">
+        <div class="wrap" role="main" aria-labelledby="about-heading">
+            <div class="stars" aria-hidden="true"></div>
+
+            <section class="left">
+                <h1 id="about-heading">ABOUT US</h1>
+                <span class="underline" aria-hidden="true"></span>
+                <p class="lead">Space Connect</p>
+
+                <ul class="features" aria-label="features">
+                    <li class="feature">
+                        <div class="bullet">★</div>
+                        <div class="feature-text">
+                            STORY<br>
+                            <small>Connecting Earth with Space Tourism for Everyone</small>
+                        </div>
+                    </li>
+                    <li class="feature">
+                        <div class="bullet">✓</div>
+                        <div class="feature-text">
+                            MISSION<br>
+                            <small>Affordable Space travel for common people</small>
+                        </div>
+                    </li>
+                    <li class="feature">
+                        <div class="bullet">☾</div>
+                        <div class="feature-text">
+                            PARTNERS<br>
+                            <small>Space agencies (ISRO, SpaceX, Blue Origin)</small>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <div><img src="assets/space-1.svg" alt="" width="300px" class="Space"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="main-container">
+            <div class="form-container">
+                <form id="club-registration-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="text" id="age" name="age" required placeholder="Enter your age">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-number">Identification Number</label>
+                        <input type="text" id="register-number" name="register-number" required
+                            placeholder="Enter your Identification Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="package">Package Name</label>
+                        <select id="package" name="package" required>
+                            <option value="" disabled selected>Select a Package</option>
+                            <option value="Moon">Moon Getaway </option>
+                            <option value="Mars">Mars Expedition</option>
+                            <option value="Cruise">Space Station Luxury Cruise</option>
+                            <option value="Exoplanet">Exoplanet Adventure</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">Why do you want to explore space?</label>
+                        <textarea id="reason" name="reason" required
+                            placeholder="Share your motivation for going to space" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+
+            <div class="space-info">
+                <h2>Why Space Connect?</h2>
+                <p>
+                    Space exploration is one of humanity’s greatest adventures. Beyond the beauty of distant planets,
+                    stars,
+                    and galaxies lies the potential to discover resources, knowledge, and new homes for future
+                    generations.
+                    Each mission expands our understanding of the universe and inspires innovation here on Earth.
+                    By stepping into the unknown, we push the limits of science, technology, and human spirit —
+                    preparing for a future where interplanetary travel may be as common as flying across continents
+                    today.
+                </p>
+                <img src="./assets/contactimg_imresizer.jpg" alt="" class="conimg">
+            </div>
+        </div>
+
+        <footer>
+            <hr class="foo">
+            <p class="copy">&copy; 2025 Space Connect. All rights reserved.</p>
+        </footer>
+    </section>
+
+</body>
+
+</html>
